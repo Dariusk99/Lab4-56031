@@ -20,4 +20,11 @@ elif [ "$1" = "--logs" ]; then
         echo "Data: $(date)" >> "$nazwa"
     done
 
+elif [ "$1" = "--help" ]; then
+    echo "Dostepne opcje:"
+    echo "--date        - wyświetl dzisiejszą date"
+    echo "--logs        - stwórz 100 plików log"
+    echo "--logs N      - stwórz N plików log"
+    echo "--help        - wyświetl pomoc"
+
 fi
