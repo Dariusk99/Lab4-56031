@@ -22,10 +22,10 @@ elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
 
 elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "Dostepne opcje:"
-    echo "--date        - wyświetl dzisiejszą date"
-    echo "--logs        - stwórz 100 plików log"
-    echo "--logs N      - stwórz N plików log"
-    echo "--help        - wyświetl pomoc"
+    echo "--date, -d       - wyświetl dzisiejszą date"
+    echo "--logs, -l        - stwórz 100 plików log"
+    echo "--logs, -l N      - stwórz N plików log"
+    echo "--help, -h        - wyświetl pomoc"
 
 elif [ "$1" = "--init" ]; then
 
