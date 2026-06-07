@@ -27,4 +27,12 @@ elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "--logs N      - stwórz N plików log"
     echo "--help        - wyświetl pomoc"
 
+elif [ "$1" = "--init" ]; then
+
+    git clone "$(git config --get remote.origin.url)"
+
+    export PATH=$PATH:$(pwd)
+
+    echo "Repozytorium sklonowane"
+	
 fi
