@@ -1,9 +1,9 @@
 #!/bin/bash
 
-if [ "$1" = "--date" ]; then
+if [ "$1" = "--date" ] || [ "$1" = "-d" ]; then
     date
 
-elif [ "$1" = "--logs" ]; then
+elif [ "$1" = "--logs" ] || [ "$1" = "-l" ]; then
 
     liczba=100
 
@@ -20,7 +20,7 @@ elif [ "$1" = "--logs" ]; then
         echo "Data: $(date)" >> "$nazwa"
     done
 
-elif [ "$1" = "--help" ]; then
+elif [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
     echo "Dostepne opcje:"
     echo "--date        - wyświetl dzisiejszą date"
     echo "--logs        - stwórz 100 plików log"
