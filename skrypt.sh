@@ -35,4 +35,19 @@ elif [ "$1" = "--init" ]; then
 
     echo "Repozytorium sklonowane"
 	
+elif [ "$1" = "--error" ]; then
+
+    liczba=100
+
+    if [ -n "$2" ]; then
+        liczba=$2
+    fi
+
+    for ((i=1;i<=liczba;i++))
+    do
+        mkdir -p error$i
+
+        echo "error$i" > error$i/error$i.txt
+    done
+	
 fi
