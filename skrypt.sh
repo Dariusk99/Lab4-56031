@@ -5,7 +5,13 @@ if [ "$1" = "--date" ]; then
 
 elif [ "$1" = "--logs" ]; then
 
-    for i in {1..100}
+    liczba=100
+
+    if [ -n "$2" ]; then
+        liczba=$2
+    fi
+
+    for ((i=1; i<=liczba; i++))
     do
         nazwa="log${i}.txt"
 
